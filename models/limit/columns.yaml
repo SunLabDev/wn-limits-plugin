@@ -1,0 +1,8 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    description:
+        label: sunlab.limits::lang.limit.description
+        searchable: true

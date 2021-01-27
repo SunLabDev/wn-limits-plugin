@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Limit
+
+# Model Form Field configuration
+form: $/sunlab/limits/models/limit/fields.yaml
+
+# Model Class name
+modelClass: SunLab\Limits\Models\Limit
+
+# Default redirect location
+defaultRedirect: sunlab/limits/limits
+
+# Create page
+create:
+    title: Create Limit
+    redirect: sunlab/limits/limits/update/:id
+    redirectClose: sunlab/limits/limits
+
+# Update page
+update:
+    title: Edit Limit
+    redirect: sunlab/limits/limits
+    redirectClose: sunlab/limits/limits
+
+# Preview page
+preview:
+    title: Preview Limit

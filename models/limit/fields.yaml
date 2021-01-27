@@ -1,0 +1,48 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    description:
+        label: sunlab.limits::lang.limit.description
+        required: true
+        span: left
+
+    code:
+        label: sunlab.limits::lang.limit.code
+        required: true
+        span: right
+        preset:
+            field: description
+
+    _applied_to:
+        label: sunlab.limits::lang.limit.applied_to
+        required: true
+        type: repeater
+        form:
+            fields:
+                limitable_type:
+                    label: sunlab.limits::lang.limit.limitable_type
+                    required: true
+                    type: balloon-selector
+                    span: storm
+                    cssClass: col-sm-5
+                    options:
+                        User: sunlab.limits::lang.limit.user
+                        UserRole: sunlab.limits::lang.limit.user_role
+
+                limitable_id:
+                    label: sunlab.limits::lang.limit.limitable_id
+                    required: true
+                    type: dropdown
+                    span: storm
+                    cssClass: col-sm-5
+                    dependsOn: limitable_type
+
+                maximum:
+                    label: sunlab.limits::lang.limit.maximum
+                    required: true
+                    type: number
+                    span: storm
+                    cssClass: col-sm-2
+
