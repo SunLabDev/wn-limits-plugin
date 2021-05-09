@@ -1,0 +1,26 @@
+{
+    "name": "sunlab/wn-limits-plugin",
+    "type": "winter-plugin",
+    "description": "Add numerical limits to certain actions to trigger permission changes",
+    "homepage": "https://github.com/sunlabdev/wn-limits-plugin",
+    "keywords": ["winter cms", "winter", "plugin", "limits"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain 'Maz' B",
+            "email": "romainmazb@gmail.com",
+            "role": "Original Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sunlabdev/wn-limits-plugin/issues",
+        "source": "https://github.com/sunlabdev/wn-limits-plugin"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "limits"
+    }
+}
